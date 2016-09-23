@@ -8,5 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
+let BG = BGM()
 
+BG.check(s:"Batman1337")
