@@ -17,7 +17,7 @@ class BGM
     {
         if s.rangeOfCharacter(from: characterset.inverted) != nil
         {
-            print("FALSE")
+            c += 1
         }
     }
 }

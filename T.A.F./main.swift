@@ -10,4 +10,24 @@ import Foundation
 
 let BG = BGM()
 
-BG.check(s:"Batman1337")
+var c = 0
+
+print("Hey, wie ist dein Name?")
+
+var name = readLine()!
+
+BG.check(s: name)
+
+while c != 0{
+    print("Bitte erneut versuchen, nur Aa-Zz erlaubt!")
+    name = readLine()!
+    BG.check(s: name)
+    c -= 1
+}
+
+let ename = name
+
+
+
+print("Dein Name ist also " + ename + "!")
+print(ename + " was geht ab?!")
