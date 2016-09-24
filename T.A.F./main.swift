@@ -27,7 +27,6 @@ while c != 0{
 
 let ename = name
 
-
-
 print("Dein Name ist also " + ename + "!")
+
 print(ename + " was geht ab?!")
