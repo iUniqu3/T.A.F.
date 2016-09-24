@@ -27,8 +27,6 @@ while c != 0{
 while name.characters.count > 8{
     print("Bitte begrenze deine Eingabe auf 8 Zeichen!")
     name = readLine()!
-    BG.check(s: name)
-    c -= 1
 }
 
 let ename = name
