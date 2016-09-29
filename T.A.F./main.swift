@@ -14,12 +14,9 @@ var name = ""
 
 print("Hey, wie ist dein Name?")
 
-repeat
-{
+repeat{
 name = readLine()!
-
 }while !BG.laengeCheck(s: name) || !BG.charCheck(s: name)
-
 
 let ename = name
 
