@@ -13,11 +13,25 @@ class BGM
     
     let characterset = NSCharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
     
-    func check(s:String)
+    func charCheck (s:String) -> Bool
     {
-        if s.rangeOfCharacter(from: characterset.inverted) != nil
-        {
-            c += 1
-        }
+        if s.rangeOfCharacter(from: characterset.inverted) != nil{
+            print("Bitte erneut versuchen, nur Aa-Zz / 4-8 Zeichen erlaubt!")
+            return false
+            }
+        else{
+            return true
+            }
+    }
+    
+    func laengeCheck (s:String) -> Bool
+    {
+        if s.characters.count > 8 || s.isEmpty || s.characters.count < 4{
+            print("Bitte erneut versuchen, nur Aa-Zz / 4-8 Zeichen erlaubt!")
+                return false
+            }
+        else{
+            return true
+            }
     }
 }
